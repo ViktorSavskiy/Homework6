@@ -43,6 +43,7 @@
     height: 93px;
     margin-top: 290px;
     margin-bottom: 381px;
+
 }
 h1{
     font-family: 'Lato';
@@ -66,4 +67,236 @@ h2{
 }
 .word{
     color: #F16D7F
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    margin-top: 65px;
+}
+.big{
+    grid-column: span 3;
+}
+.card1{
+    background-image: url(img/women.png);
+    width: 360px;
+    height: 260px;
+}
+.card2{
+    background-image: url(img/man.png);
+    width: 360px;
+    height: 260px;
+}
+.card3{
+    background-image: url(img/kid.png);
+    width: 360px;
+    height: 260px;
+}
+.card4{
+    background-image: url(img/some.png);
+    width: 1140px;
+    height: 180px;
+}
+.fon .p {
+    position: relative;
+}
+.p{
+    top: -160px;
+    left: 103px;
+    width: 154px;
+    height: 50px;
+}
+.fon1 .p1 {
+    position: relative;
+}
+.p1{
+    top: -130px;
+    left: 500px;
+    width: 170px;
+    height: 50px;
+}
+.fon1{
+    height: 180px;
+}
+h4{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center; 
+    
+    color: #FFFFFF;
+}
+h3{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #F16D7F;
+    
+}
+.h2-midle{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    margin-left: 480px;
+    margin-top: 66px;
+}
+.par-midle{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    margin-left: 401px;
+    margin-top: 6px;
+}
+.cards-bot{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 47px;
+    gap: 30px;
+}
+p{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin-left: 16px;
+}
+h5{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    margin-left: 16px;
+    margin-top: 25px;
+    margin-bottom: 16px;
+}
+.card-bot{
+    background: #F8F8F8;
+}
+.price{
+    margin-top: 16px;
+    margin-bottom: 19px;
+    margin-left: 16px;
+    width: 52.46px;
+    height: 19px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #F16D7F;
+}
+button{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #F26376;
+    border: 1px solid #FF6A6A;
+    Width: 211px;
+    height: 47px;
+    margin-top: 63px;
+    grid-column: span 3;
+}
+
+
+@media (max-width: 768px) {
+    .container{
+        width: 768px;
+    }
+    .icons-top{
+        margin-left: 424px;
+    }
+    .rec{
+        margin-left: 39px;
+        margin-top: 138px;
+    }
+    .content-top{
+        width: 769.57px;
+        height: 367.57px;
+    }
+    .title-top{
+        height: 78px;
+        margin-top: 138.1px;
+        margin-right: 33.1px;
+    }
+    h1{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 52.8px;
+    
+        color: #222222;
+    }
+    h2{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28.8px;
+    
+        color: #222222;
+        display: flex;
+        gap: 6px;
+    }
+    .cards{
+        gap: 19.9px;
+    }
+    .card1{
+        width: 231.97px;
+        height: 167.62px;
+    }
+    .card2{
+        width: 231.97px;
+        height: 167.62px;
+    }
+    .card3{
+        width: 231.97px;
+        height: 167.62px;
+    }
+    .card4{
+        width: 734.58px;
+        height: 116.04px;
+    }
+    .fon{
+        width: 231.97px;
+        height: 167.62px;
+    }
+    .content-midle{
+        width: 734.58px;
+    }
+    .cards-bot{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin-top: 73px;
+        gap: 16px;
+    }
+    p{
+        width: 314px;
+        height: 51px;
+    }
+    .card-bot{
+        width: 360px;
+    }
 }
