@@ -1,14 +1,22 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
+body{
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
 .container {
-    width: 1140px;
+    width: 1600px;
     margin: 0 auto;
 }
-.top{
+nav{
     background: #222222;
     display: flex;
     padding-top: 18px;
@@ -19,7 +27,7 @@
     display: flex;
     gap: 41px;
     align-items: flex-end;
-    margin-left: 2px;
+    margin-left: 231px;
 }
 .icons-top{
     margin-left: 859px;
@@ -30,20 +38,14 @@
 .content-top{
     background: #F1E4E6;
     display: flex;
+    padding-left: 231px;
 }
-.rec{
-    width: 12px;
-    height: 92px;
-    margin-left: 63.42px;
-    margin-right: 16px;
-    margin-top: 289.9px;
-}
+
 .title-top{
-    width: 450px;
-    height: 93px;
     margin-top: 290px;
     margin-bottom: 381px;
-
+    border-left: #F16D7F;
+    border-width: 12px;
 }
 h1{
     font-family: 'Lato';
@@ -57,7 +59,7 @@ h1{
 h2{
     font-family: 'Lato';
     font-style: normal;
-    font-weight: 700;
+    font-weight: normal;
     font-size: 32px;
     line-height: 38.4px;
 
@@ -74,6 +76,8 @@ h2{
     grid-template-rows: 1fr 1fr;
     gap: 30px;
     margin-top: 65px;
+    margin-left: 231px;
+    margin-right: 230px;
 }
 .big{
     grid-column: span 3;
@@ -121,8 +125,7 @@ h2{
 }
 h4{
     font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
+    font-weight: lighter;
     font-size: 16px;
     line-height: 19px;
     text-align: center; 
