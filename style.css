@@ -8,10 +8,10 @@ body{
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
 }
-img{
+/*img{
     display: block;
     max-width: 100%;
-}
+}*/
 .container {
     width: 1600px;
     margin: 0 auto;
@@ -46,6 +46,8 @@ nav{
     margin-bottom: 381px;
     border-left: #F16D7F;
     border-width: 12px;
+    border-left-style: outset;
+    padding-left: 16px;
 }
 h1{
     font-family: 'Lato';
@@ -82,65 +84,9 @@ h2{
 .big{
     grid-column: span 3;
 }
-.card1{
-    background-image: url(img/women.png);
-    width: 360px;
-    height: 260px;
-}
-.card2{
-    background-image: url(img/man.png);
-    width: 360px;
-    height: 260px;
-}
-.card3{
-    background-image: url(img/kid.png);
-    width: 360px;
-    height: 260px;
-}
-.card4{
-    background-image: url(img/some.png);
-    width: 1140px;
-    height: 180px;
-}
-.fon .p {
-    position: relative;
-}
-.p{
-    top: -160px;
-    left: 103px;
-    width: 154px;
-    height: 50px;
-}
-.fon1 .p1 {
-    position: relative;
-}
-.p1{
-    top: -130px;
-    left: 500px;
-    width: 170px;
-    height: 50px;
-}
-.fon1{
-    height: 180px;
-}
-h4{
-    font-family: 'Lato';
-    font-weight: lighter;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center; 
-    
-    color: #FFFFFF;
-}
-h3{
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    color: #F16D7F;
-    
+
+.card:hover{
+	filter: brightness(40%)
 }
 .h2-midle{
     font-family: 'Lato';
@@ -149,7 +95,7 @@ h3{
     font-size: 30px;
     line-height: 36px;
     color: #222222;
-    margin-left: 480px;
+    margin-left: 710.36px;
     margin-top: 66px;
 }
 .par-midle{
@@ -159,15 +105,17 @@ h3{
     font-size: 14px;
     line-height: 17px;
     color: #9F9F9F;
-    margin-left: 401px;
+    margin-left: 631px;
     margin-top: 6px;
 }
 .cards-bot{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     margin-top: 47px;
     gap: 30px;
+    margin-left: 230px;
+    margin-right: 230px;
 }
 p{
     font-family: 'Lato';
@@ -217,26 +165,115 @@ button{
     border: 1px solid #FF6A6A;
     Width: 211px;
     height: 47px;
-    margin-top: 63px;
-    grid-column: span 3;
+    margin-top: 48px;
 }
+.but{
+    display: flex;
+    justify-content: center;
 
-
+}
+.text:hover{
+    color: #F8F8F8;
+    background: linear-gradient(0deg, #F16D7F, #F16D7F),
+    linear-gradient(0deg, #FF6A6A, #FF6A6A);
+    ;
+}
+.delivery{
+    background: #222224;
+    display: flex;
+    margin-top: 95px;
+    gap: 30px;
+    padding-left: 230px;
+    padding-right: 230px;
+    padding-top: 103px;
+    padding-bottom: 104px;
+}   
+.delivery_part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+.delivery_part_title{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+}
+.delivery_part_text{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+}
+.subscribe{
+    background-image: url(img/fon_card.png);
+    display: flex;
+    padding-top: 86px;
+    padding-bottom: 126px;
+    gap: 223px;
+    padding-left: 240px;
+    padding-right: 230px;
+}
+.subscribe_photo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    width: 360px;
+}
+form{
+    gap: 0px;
+}
+.bottom{
+    background: #222224;
+    display: flex;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-left: 235px;
+    padding-right: 230px;
+    gap: 750px;
+    align-items: center;
+}
+.form_button{
+    background: #F16D7F;
+    color: #fbfbfb;
+    width: 100px;
+    height: 49px;
+    border-radius: 0 50px 50px 0;
+}
+.form_input{
+    width: 256px;
+    height: 49px;
+    border-radius: 50px 0 0 50px ;
+    padding-left: 22px;
+}
+svg:hover{
+    fill: #F16D7F;
+}
 @media (max-width: 768px) {
     .container{
         width: 768px;
     }
+    .logo-top{
+        margin-left: 32px;
+    }
     .icons-top{
         margin-left: 424px;
-    }
-    .rec{
-        margin-left: 39px;
-        margin-top: 138px;
     }
     .content-top{
         width: 769.57px;
         height: 367.57px;
+        padding-left: 32px;
     }
+
     .title-top{
         height: 78px;
         margin-top: 138.1px;
@@ -264,6 +301,7 @@ button{
     }
     .cards{
         gap: 19.9px;
+        margin-left: 16px;
     }
     .card1{
         width: 231.97px;
@@ -281,19 +319,23 @@ button{
         width: 734.58px;
         height: 116.04px;
     }
-    .fon{
-        width: 231.97px;
-        height: 167.62px;
-    }
+    
     .content-midle{
         width: 734.58px;
+    }
+    .h2-midle{
+        margin-left: 289px;
+    }
+    .par-midle{
+        margin-left: 215px;
     }
     .cards-bot{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         margin-top: 73px;
         gap: 16px;
+        margin-left: 16px;
     }
     p{
         width: 314px;
@@ -303,3 +345,58 @@ button{
         width: 360px;
     }
 }
+@media (max-width: 375px){
+    .container{
+        width: 375px;
+    }
+    .content-top{
+        width: 375px;
+    }
+    nav{
+       width: 375px; 
+    }
+    #man{
+        display: none;
+    }
+    #ic{
+        display: none;
+    }
+    #cor{
+        display: none;
+    }
+    .title-top{
+        width: 236px;
+        font-size: 38px;
+        line-height: 46px;
+    }
+    .icons-top{
+        margin-left: 200px;
+        margin-right: 16px;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .big{
+        width: 343px;
+    }
+    .card{
+        width: 343px;
+    }
+    .h2-midle{
+        margin-left: 99px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .par-midle{
+        margin-left: 25px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .cards-bot{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
