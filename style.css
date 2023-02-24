@@ -39,6 +39,35 @@ nav{
     background: #F1E4E6;
     display: flex;
     padding-left: 231px;
+    position: relative;
+}
+.menu-top{
+    position: absolute;
+    top: 75px;
+    left: 1758px;
+    background: #ffffff;
+    width: 232px;
+    height: 634px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 32px;
+    padding-left: 32px;
+    display: none;
+}
+.menu_title{
+    color: #F16D7F;
+}
+.menu_p{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+.click:hover{
+    cursor: pointer;
 }
 
 .title-top{
